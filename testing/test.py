@@ -80,6 +80,7 @@ def test_sparce():
         if file.endswith(".npy"):
             path = os.path.join("data/sparce_data", file)
             A = np.load(path)
+            print(A)
             size = file[:-4]
             file_gram = open('test_results/gram_sparce_results.txt', 'a')
             file_house = open('test_results/house_sparce_results.txt', 'a')

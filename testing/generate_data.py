@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import scipy.stats as stats
 import scipy.sparse as sparse
 
-sample_size = 2000  
+sample_size = 1200  
 step = 100
 
 def create_upper_matrix(size):
@@ -45,7 +45,7 @@ def generate_saprce(m, n):
     print("generating sparce data")
     for size in range(2, n+1, step):
         print(size)
-        A = sparce(m, n, 0.05).toarray()
+        A = sparce(size, size, 0.05).toarray()
         np.save(f'data/sparce_data/{str(size)}.npy', A, allow_pickle=True)
 
 def generate_saprce_m(m):
@@ -66,7 +66,7 @@ def generate_dense(m, n):
     print("generating dense data")
     for size in range(2, n+1, step):
         print(size)
-        A = sparce(m, n, 1).toarray()
+        A = sparce(size, size, 1).toarray()
         np.save(f'data/dense_data/{str(size)}.npy', A, allow_pickle=True)
 
 def generate_dense_m(m):
