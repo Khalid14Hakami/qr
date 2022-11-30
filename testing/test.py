@@ -35,7 +35,7 @@ def test_mean_error():
             size = file[:-4]
             file_gram = open('test_results/MSE_Gram.txt', 'a')
             file_house = open('test_results/MSE_house.txt', 'a')
-            if int(size) not in gram:
+            if True: #int(size) not in gram:
                 start_time = time.time()
 
                 Q1, R1  = Gram_Schimidt(A)
@@ -85,7 +85,7 @@ def test_sparce():
             file_gram = open('test_results/gram_sparce_results.txt', 'a')
             file_house = open('test_results/house_sparce_results.txt', 'a')
 
-            if int(size) not in gram:
+            if True: #int(size) not in gram:
                 start_time = time.time()
                 try:
 
@@ -96,7 +96,7 @@ def test_sparce():
                 except Exception as e:
                     print(e)
             
-            if int(size) not in gram:
+            if True: #int(size) not in gram:
                 ### testing House
                 start_time = time.time()
                 Q2, R2  = householder_reduce(A)
@@ -133,7 +133,7 @@ def test_sparce_m():
             file_gram = open('test_results/gram_sparce_m_results.txt', 'a')
             file_house = open('test_results/house_sparce_m_results.txt', 'a')
 
-            if int(size) not in gram:
+            if True: #int(size) not in gram:
                 start_time = time.time()
                 try:
 
@@ -144,7 +144,7 @@ def test_sparce_m():
                 except Exception as e:
                     print(e)
             
-            if int(size) not in gram:
+            if True: #int(size) not in gram:
                 ### testing House
                 start_time = time.time()
                 Q2, R2  = householder_reduce(A)
@@ -180,7 +180,7 @@ def test_sparce_n():
             file_gram = open('test_results/gram_sparce_n_results.txt', 'a')
             file_house = open('test_results/house_sparce_n_results.txt', 'a')
 
-            if int(size) not in gram:
+            if True: #int(size) not in gram:
                 start_time = time.time()
                 try:
 
@@ -191,7 +191,7 @@ def test_sparce_n():
                 except Exception as e:
                     print(e)
             
-            if int(size) not in gram:
+            if True: #int(size) not in gram:
                 ### testing House
                 start_time = time.time()
                 Q2, R2  = householder_reduce(A)
@@ -227,7 +227,7 @@ def test_dense():
             file_gram = open('test_results/gram_dense_results.txt', 'a')
             file_house = open('test_results/house_dense_results.txt', 'a')
 
-            if int(size) not in gram:
+            if True: #int(size) not in gram:
                 start_time = time.time()
                 try:
 
@@ -238,7 +238,7 @@ def test_dense():
                 except Exception as e:
                     print(e)
             
-            if int(size) not in gram:
+            if True: #int(size) not in gram:
                 ### testing House
                 start_time = time.time()
                 Q2, R2  = householder_reduce(A)
@@ -274,7 +274,7 @@ def test_dense_m():
             file_gram = open('test_results/gram_dense_m_results.txt', 'a')
             file_house = open('test_results/house_dense_m_results.txt', 'a')
 
-            if int(size) not in gram:
+            if True: #int(size) not in gram:
                 start_time = time.time()
                 try:
 
@@ -285,7 +285,7 @@ def test_dense_m():
                 except Exception as e:
                     print(e)
             
-            if int(size) not in gram:
+            if True: #int(size) not in gram:
                 ### testing House
                 start_time = time.time()
                 Q2, R2  = householder_reduce(A)
@@ -322,7 +322,7 @@ def test_dense_n():
             file_gram = open('test_results/gram_dense_n_results.txt', 'a')
             file_house = open('test_results/house_dense_n_results.txt', 'a')
 
-            if int(size) not in gram:
+            if True: #int(size) not in gram:
                 start_time = time.time()
                 try:
 
@@ -333,7 +333,7 @@ def test_dense_n():
                 except Exception as e:
                     print(e)
             
-            if int(size) not in gram:
+            if True: #int(size) not in gram:
                 ### testing House
                 start_time = time.time()
                 Q2, R2  = householder_reduce(A)
